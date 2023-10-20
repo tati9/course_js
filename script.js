@@ -437,3 +437,18 @@ const slider = function () {
   });
 };
 slider();
+
+//Lifecycle
+
+document.addEventListener('DOMContetntLoaded', function (e) {
+  console.log('Html parsed and DOM tree build', e);
+});
+
+window.addEventListener('load', function (e) {
+  console.log('Page fully loaded');
+});
+// window.addEventListener('beforeunload', function (e) {
+//   e.preventDefault();
+//   console.log(e);
+//   e.returnValue = '';
+// });
